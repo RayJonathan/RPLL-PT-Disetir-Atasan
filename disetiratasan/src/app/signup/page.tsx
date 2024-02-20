@@ -27,11 +27,11 @@ const Signup: React.FC<signup> = (props) => {
           />
         </div>
 
-      <div className="flex-1 bg-gray-100 flex flex-col items-center justify-center">
+      <div className="flex-1 bg-gray-100  flex flex-col items-center justify-center">
           <div className="text-black">
-            <div className="-mt-96">
-              <h1 className=" text-center text-4xl font-bold mb-10">Create Account</h1>
-              <p className="-mt-7">Follow the instructions to make it easier to register and you will be able to explore inside</p>
+            <div className="mt-16">
+              <h1 className=" text-center text-4xl font-bold">Create Account</h1>
+              <p className="mt-3">Follow the instructions to make it easier to register and you will be able to explore inside</p>
             </div>
 
             <form className="w-675px p-8 rounded  ml-3 mt-16">
@@ -39,7 +39,7 @@ const Signup: React.FC<signup> = (props) => {
               <span className="text-gray-700 font-bold">First Name</span>
               <input
                 type="text"
-                className="mt-1 p-2 w-full border rounded"
+                className="mt-1 p-2 w-auto border rounded"
               />
             </label>
 
