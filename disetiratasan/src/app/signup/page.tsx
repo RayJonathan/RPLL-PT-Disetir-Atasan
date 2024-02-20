@@ -34,22 +34,24 @@ const Signup: React.FC<signup> = (props) => {
               <p className="mt-3">Follow the instructions to make it easier to register and you will be able to explore inside</p>
             </div>
 
-            <form className="w-675px p-8 rounded  ml-3 mt-16">
-            <label className="block mb-4">
-              <span className="text-gray-700 font-bold">First Name</span>
-              <input
-                type="text"
-                className="mt-1 p-2 w-auto border rounded"
-              />
-            </label>
+            <form className="w-675px  rounded  ml-3 mt-16 p-4">
 
-            <label className="block mb-4">
-              <span className="text-gray-700 font-bold">Last Name</span>
-              <input
-              type="password"
-              className="mt-1 p-2 w-full border rounded"
-            />
-            </label>
+            <div className="flex">
+
+            <div className="w-auto">
+              <label className="block mb-4">
+                <span className="text-gray-700 font-bold">First Name</span>
+                <input type="text" className="mt-1 p-2 w-full border rounded"/>
+              </label>
+            </div>
+
+            <div className="w-auto">
+              <label className="block mb-4 ml-6">
+                <span className="text-gray-700 font-bold">Last Name</span>
+                <input type="text" className="mt-1 p-2 w-full border rounded"/>
+              </label>
+            </div>
+            </div>
 
             <label className="block mb-4">
               <span className="text-gray-700 font-bold">Email</span>
@@ -58,7 +60,7 @@ const Signup: React.FC<signup> = (props) => {
               className="mt-1 p-2 w-full border rounded"
             />
             </label>
-            
+
             <label className="block mb-4">
               <span className="text-gray-700 font-bold">Phone Number</span>
               <input
@@ -66,44 +68,7 @@ const Signup: React.FC<signup> = (props) => {
               className="mt-1 p-2 w-full border rounded"
             />
             </label>
-
-            <label className="block mb-4">
-              <span className="text-gray-700 font-bold">Address</span>
-              <input
-              type="text"
-              className="mt-1 p-2 w-full border rounded"
-            />
-            </label>
-            <label className="block mb-4">
-              <span className="text-gray-700 font-bold">City</span>
-              <input
-              type="text"
-              className="mt-1 p-2 w-full border rounded"
-            />
-            </label>
-            <label className="block mb-4">
-              <span className="text-gray-700 font-bold">State</span>
-              <input
-              type="text"
-              className="mt-1 p-2 w-full border rounded"
-            />
-            </label>
             
-            <label className="block mb-4">
-              <span className="text-gray-700 font-bold">Zipcode</span>
-              <input
-              type="text"
-              className="mt-1 p-2 w-full border rounded"
-            />
-
-            <label className="block mb-4">
-              <span className="text-gray-700 font-bold">Country</span>
-              <input
-              type="text"
-              className="mt-1 p-2 w-full border rounded"
-            />
-            </label>
-
             <label className="block mb-4">
               <span className="text-gray-700 font-bold">Password</span>
               <input
@@ -112,11 +77,51 @@ const Signup: React.FC<signup> = (props) => {
             />
             </label>
 
+            <label className="block mb-4">
+              <span className="text-gray-700 font-bold">Re-Enter the Password</span>
+              <input
+              type="password"
+              className="mt-1 p-2 w-full border rounded"
+            />
+            </label>
+            
+          <label className="block mb-4">
+              <span className="text-gray-700 font-bold">Country</span>
+              <input
+              type="text"
+              className="mt-1 p-2 w-full border rounded"
+            />
+          </label>
+          <div className="flex">
+
+            <div className="w-auto">
+              <label className="block mb-4">
+                <span className="text-gray-700 font-bold">City</span>
+                <input type="text" className="mt-1 p-2 w-80 border rounded"/>
+              </label>
+            </div>
+
+            <div className="w-auto">
+              <label className="block mb-4 ml-9">
+                <span className="text-gray-700 font-bold">Province</span>
+                <input type="text" className="mt-1 p-2 w-full border rounded"/>
+              </label>
+            </div>
+            </div>
+            
+            <label className="block mb-4">
+              <span className="text-gray-700 font-bold">Zipcode</span>
+              <input
+              type="text"
+              className="mt-1 p-2 w-full border rounded"
+            />
+
             </label>
             <button type="submit"className="bg-black text-white p-2 rounded-md w-full mt-3"> Sign In
             </button>
 
               <p className="text-center mt-5">Already have an account? <a href="http://localhost:3000/login" className="font-bold underline">LOGIN!</a></p>
+            
             </form>
         <div>
       </div>
