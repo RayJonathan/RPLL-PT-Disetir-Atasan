@@ -1,9 +1,9 @@
 
 
-interface HeaderProps {
+interface CarviewProps {
 }
 
-const Header: React.FC<HeaderProps> = (props) => {
+const Carview : React.FC<CarviewProps> = (props) => {
   return (
     <header className="bg-header py-4">
       <div className="container mx-auto flex justify-between items-center">
@@ -30,4 +30,4 @@ const Header: React.FC<HeaderProps> = (props) => {
   );
 };
 
-export default Header;
+export default Carview;
