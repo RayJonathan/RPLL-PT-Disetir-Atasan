@@ -16,6 +16,7 @@ const config: Config = {
       spacing: {
         '675px': '675px',
         '575': '575px',
+        '20px' : '20px',
       },
       colors:{
         transparent: 'transparent',

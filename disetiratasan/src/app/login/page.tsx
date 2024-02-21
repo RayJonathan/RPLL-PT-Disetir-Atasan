@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Link from "next/link"
 interface LoginProps {}
 
 const Login: React.FC<LoginProps> = (props) => {
