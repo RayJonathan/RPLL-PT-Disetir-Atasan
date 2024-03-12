@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        '2xl': '1.5rem',
+        '3xl': '1.875rem',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -30,6 +34,8 @@ const config: Config = {
         'silver': '#ecebff',
         'bubble-gum': '#ff77e9',
         'bermuda': '#78dcca',
+        'gray-new': '#E3E1D9',
+        'blue-new': '#101D34',
       }
     },
   },
