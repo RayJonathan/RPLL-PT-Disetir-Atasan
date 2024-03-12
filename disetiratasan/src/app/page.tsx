@@ -1,8 +1,10 @@
 import NewArrivals from "@/components/NewArrivals";
+import Hover from "@/components/WelcomeText";
 
 export default function Home() {
   return (
-    <div>
+    <div className="absolute">
+      <Hover/>
       <div className="font-bold md:text-lg text-md bg-blue-new flex item-center text-white w-60 p-1 pl-2 ml-3 mt-3">
         <h1>New Arrivals</h1>
       </div>
