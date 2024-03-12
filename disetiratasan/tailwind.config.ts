@@ -11,6 +11,7 @@ const config: Config = {
       fontSize: {
         '2xl': '1.5rem',
         '3xl': '1.875rem',
+        '0.3xs': '0.30rem',
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

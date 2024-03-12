@@ -2,7 +2,7 @@ import Navbar from '@/components/Utilities/Navbar';
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Hover from '@/components/Utilities/Hover';
+import Hover from '@/components/WelcomeText';
 
 const inter = Inter({ subsets: ["latin"] });
 
