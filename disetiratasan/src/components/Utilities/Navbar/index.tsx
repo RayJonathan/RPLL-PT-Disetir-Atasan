@@ -26,7 +26,7 @@ export default function Navbar() {
             <div className="border-l border-white h-14 ml-4"></div>
             <nav className="ml-4 md:text-base sm:text-xs text-xs">
               <ul className="flex space-x-4">
-                <li className="text-white hover:text-gray-300 cursor-pointer" onClick={()=>onClickUrl('/home')}>
+                <li className="text-white hover:text-gray-300 cursor-pointer" onClick={()=>onClickUrl('/')}>
                     Home
                 </li>
                 <li className="text-white hover:text-gray-300 cursor-pointer" onClick={()=>onClickUrl('/vehicle')}>

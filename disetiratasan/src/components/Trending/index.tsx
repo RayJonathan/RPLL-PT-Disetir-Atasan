@@ -15,7 +15,7 @@ const Trending = () => {
                     <p>The Ferrari Portofino M, which features the legendary ‘M’ suffix, for Modificata, in its name, is the evolution of the Ferrari Portofino. The new Prancing Horse 2+ spider boasts a slew of new technical and design features, most notably an 8-speed dual-clutch gearbox and a five-position Manettino, an absolute first for a Ferrari GT convertible. Every drive aboard the Ferrari Portofino M is a voyage of (re)discovery.</p>
                 </div>
                 <div className="mb-4 flex flex-row">
-                    <button className="bg-white hover:bg-header hover:text-white font-bold md:py-3 sm:py-2 py-2 px-4 rounded-full md:w-56 sm:w-52 w-52 transition-all duration-700 ease-in-out">
+                    <button className="bg-white hover:bg-header hover:text-white font-bold md:py-3 sm:py-2 py-2 px-4 rounded-full md:w-56 sm:w-52 w-52 transition-all duration-700 ease-in-out border-2 border-red-700 hover:border-lime-700">
                         Build Your Own
                     </button>
                 </div>
