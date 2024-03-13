@@ -38,6 +38,7 @@ const config: Config = {
         'gray-new': '#E3E1D9',
         'blue-new': '#101D34',
         'yellow-hov': '#FBA834',
+        'gray-tren': '#D2CFCF',
       }
     },
   },

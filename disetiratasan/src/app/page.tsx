@@ -1,5 +1,6 @@
 import BuildCustom from "@/components/BuildCustomize";
 import NewArrivals from "@/components/NewArrivals";
+import Trending from "@/components/Trending";
 import Hover from "@/components/WelcomeText";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <div className="p-3">
         <BuildCustom/>
       </div>
+      <Trending/>
     </div>
   );
 }
