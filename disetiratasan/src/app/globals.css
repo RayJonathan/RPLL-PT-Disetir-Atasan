@@ -8,7 +8,7 @@
     box-sizing: 0;
 }
 
-img#new-arrival {
+#new-arrival {
     transition: .3s ease all;
     -webkit-transition: .3s ease all;
     -moz-transition: .3s ease all;
@@ -16,6 +16,6 @@ img#new-arrival {
     -o-transition: .3s ease all;
 }
 
-img#new-arrival:hover{
+#new-arrival:hover{
     scale: 102%;
 }

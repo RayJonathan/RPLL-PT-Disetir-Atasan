@@ -24,7 +24,7 @@ export default function Navbar() {
                 alt="Disetir Atasan Logo"
               />
             <div className="border-l border-white h-14 ml-4"></div>
-            <nav className="ml-4">
+            <nav className="ml-4 md:text-base sm:text-xs text-xs">
               <ul className="flex space-x-4">
                 <li className="text-white hover:text-gray-300 cursor-pointer" onClick={()=>onClickUrl('/home')}>
                     Home
@@ -38,7 +38,7 @@ export default function Navbar() {
               </ul>
             </nav>
           </div>
-          <div className="text-white hover:text-gray-300 cursor-pointer pr-3" onClick={()=>onClickUrl('/login')}>
+          <div className="text-white hover:text-gray-300 cursor-pointer pr-3 md:text-base sm:text-xs text-xs" onClick={()=>onClickUrl('/login')}>
               Login
           </div>
         </div>

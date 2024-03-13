@@ -1,3 +1,4 @@
+import BuildCustom from "@/components/BuildCustomize";
 import NewArrivals from "@/components/NewArrivals";
 import Hover from "@/components/WelcomeText";
 
@@ -11,7 +12,9 @@ export default function Home() {
       <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-2 gap-3 h-1/2 p-3">
         <NewArrivals/>
       </div>
-      
+      <div className="p-3">
+        <BuildCustom/>
+      </div>
     </div>
   );
 }
