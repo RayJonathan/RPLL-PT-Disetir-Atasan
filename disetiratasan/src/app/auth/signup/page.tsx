@@ -117,7 +117,7 @@ const Signup: React.FC<signup> = (props) => {
             />
 
             </label>
-            <button type="submit"className="bg-black text-white p-2 rounded-md w-full mt-3"> Sign In
+            <button type="submit"className="bg-black text-white p-2 rounded-md w-full mt-3"> Sign Up
             </button>
 
               <p className="text-center mt-5">Already have an account? <a href="http://localhost:3000/login" className="font-bold underline">LOGIN!</a></p>
@@ -129,7 +129,7 @@ const Signup: React.FC<signup> = (props) => {
   </div>
   </div>
   <div className="text-center bg-header">
-      <p className="text-white  my-3 text-xs">© 2024 DISETIR ATASAN | DO NOT SELL MY INFO - CA RESIDENT ONLY</p>
+      <p className="text-white  my-5 text-xs">© 2024 DISETIR ATASAN | DO NOT SELL MY INFO - CA RESIDENT ONLY</p>
   <div/>
     </div>
     </div>
