@@ -1,0 +1,15 @@
+import NextAuth from "next-auth"
+import githubAUth from "next-auth/providers/github"
+
+const authOption ={
+    providers: [
+        githubAuth({
+            clientId: process.env.GITHUB_CLIENT,
+            clientSecret: process.env.GITHUB_SECRET
+        })
+    ],
+    secret: process.env.NEXTAUTH_SECRET
+}
+
+
+const handler = NextAuth()
