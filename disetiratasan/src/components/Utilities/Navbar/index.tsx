@@ -31,7 +31,7 @@ export default function Navbar() {
                 <li className="text-white hover:text-gray-300 cursor-pointer" onClick={()=>onClickUrl('/vehicle-list')}>
                     Vehicles
                 </li>
-                <li className="text-white hover:text-gray-300 cursor-pointer" onClick={()=>onClickUrl('/about')}>
+                <li className="text-white hover:text-gray-300 cursor-pointer" onClick={()=>onClickUrl('/about-us')}>
                     About Us
                 </li>
               </ul>
