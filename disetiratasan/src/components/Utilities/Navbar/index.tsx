@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <div>
       <header className="bg-header py-4">
-        <div className="container flex justify-between items-center">
+        <div className="flex flex-row items-center">
           <div className="flex pl-4 items-center">
               <img
                 onClick={()=>onClickUrl('/')}
@@ -37,7 +37,7 @@ export default function Navbar() {
               </ul>
             </nav>
           </div>
-          <div className="text-white hover:text-gray-300 cursor-pointer pr-3 md:text-base sm:text-xs text-xs" onClick={()=>onClickUrl('/login')}>
+          <div className="absolute text-white hover:text-gray-300 right-4 cursor-pointer pr-3 md:text-base sm:text-xs text-xs" onClick={()=>onClickUrl('/login')}>
               Login
           </div>
         </div>
