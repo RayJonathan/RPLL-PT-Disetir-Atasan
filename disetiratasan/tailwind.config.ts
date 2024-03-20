@@ -39,6 +39,7 @@ const config: Config = {
         'blue-new': '#101D34',
         'yellow-hov': '#FBA834',
         'gray-tren': '#D2CFCF',
+        'disetircolour': '#101D34'
       }
     },
   },
