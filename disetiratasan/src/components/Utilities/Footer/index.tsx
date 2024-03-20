@@ -1,6 +1,7 @@
 "use client";
 
 const Footer = () => {
+
     return (
         <div className="flex flex-auto">
             <footer className="bottom-0 w-full bg-header text-white text-center md:py-3 sm:py-3 py-3 md:px-0 sm:px-3 px-3 md:text-base sd:text-xs text-xs">

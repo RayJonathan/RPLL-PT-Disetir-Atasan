@@ -1,14 +1,100 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL") // Replace with your actual database connection string
+}
 
 generator client {
   provider = "prisma-client-js"
 }
 
-datasource db {
-  provider = "mysql"
-  url      = env("DATABASE_URL")
+model Brands {
+  Id      String  @id @default(cuid())
+  Name    String?
+}
+
+model Cars {
+  Id         String  @id @default(cuid())
+  Id_brand   String?
+  Model      String?
+  Category  String?
+  Production Int?
+  Description String?
+  Image      String?
+
+  Brand      Brands?  @relation(fields: [Id_brand], references: [Id])
+}
+
+model CarDetails {
+  Id          String  @id @default(cuid())
+  Id_car      String?
+  Type        String?
+  Price       Int?
+  Description String?
+  Image      String?
+  Acceleration String?
+  Power       String?
+  Torque      String?
+
+  Car         Cars?    @relation(fields: [Id_car], references: [Id])
+}
+
+model Colors {
+  Id   String  @id @default(cuid())
+  Nama String?
+}
+
+model ColorByBrands {
+  Id_color String
+  Id_brand String
+
+  Color   Colors  @relation(fields: [Id_color], references: [Id])
+  Brand    Brands  @relation(fields: [Id_brand], references: [Id])
+}
+
+model Options {
+  Id   String  @id @default(cuid())
+  Nama String?
+}
+
+model OptionByCars {
+  Id_option String
+  Id_car    String
+}
+
+model Orders {
+  Id          String  @id @default(cuid())
+  Id_user     String?
+  Id_carDet   String?
+  Id_color    String?
+  Id_rim      String?
+  Id_trim     String?
+  Id_option   String?
+}
+
+model Rims {
+  Id          String  @id @default(cuid())
+  Name        String?
+  Price       Int?
+  Description String?
+}
+
+model Trims {
+  Id          String  @id @default(cuid())
+  Name        String?
+  Price       Int?
+  Description String?
+}
+
+model Users {
+  Id         String  @id
+  Email      String  @unique
+  Password   String
+  FirstName  String
+  LastName   String?
+  Number     String
+  Country    String
+  Region     String
+  City       String
+  Address    String
+  Type       Int     @default(0)
 }
