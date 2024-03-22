@@ -22,7 +22,8 @@ const config: Config = {
         '675px': '675px',
         '575': '575px',
         '20px' : '20px',
-        '17' : '68px' 
+        '17' : '68px',
+        '26' :  '104px'
       },
       colors:{
         transparent: 'transparent',

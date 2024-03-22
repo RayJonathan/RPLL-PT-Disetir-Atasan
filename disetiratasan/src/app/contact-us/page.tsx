@@ -3,23 +3,22 @@ import React from 'react'
 export default function page() {
     return (
         <div className='flex flex-col items-center justify-center'>
-            <div className='flex flex-row items-center justify-center'>
-                <div className='menu-dropdown flex'>
-                    <li className='dropdown p-2 w-60 border rounded'>Menu
-                        <ul className='isi-dropdown'>
-                            <li><a href='#' className='w-60'>Accident/Injury</a></li>
-                            <li><a href='#' className='w-60'>Dealer Experience</a></li>
-                            <li><a href='#' className='w-60'>Other</a></li>
-                            <li><a href='#' className='w-60'>Parts</a></li>
-                            <li><a href='#' className='w-60'>Roadside Assistance</a></li>
-                            <li><a href='#' className='w-60'>Vehicles</a></li>
-                            <li><a href='#' className='w-60'>Vehicle Service Contact</a></li>
-                        </ul>
-                    </li>
+            <div className='flex w-auto h-screen bg-gray-100 flex-row justify-center'>
+                <div className="text-left md:text-lg sm:text-xs text-xs mt-26">
+                    <b className='ml-10'>Topic </b>
+                    <select className="inline-block bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline cursor-pointer">
+                        <option>Accident/Injury</option>
+                        <option>Dealer Experience</option>
+                        <option>Other</option>
+                        <option>Parts</option>
+                        <option>Roadside Assistance</option>
+                        <option>Vehicles</option>
+                        <option>Vehicle Service Contact</option>
+                    </select>
+                    
                 </div>
                 <div className='flex flex-auto'>
-                    <form className="w-675px p-8 rounded  ml-80 mt-16">
-
+                    <form className="w-auto p-8 rounded mt-16 ml-2">
                         <label className="flex flex-row grid-rows-2">
                             <div className="flex items-center w-40">
                                 <span className="text-gray-700 font-bold">First Name </span>
@@ -87,6 +86,8 @@ export default function page() {
                                 placeholder="Enter description..."
                             ></textarea>
                         </label>
+                    <button type="submit" className="bg-header text-white rounded-md mt-10 w-32 h-8 ml-80"><b>Submit</b>
+                    </button>
                     </form>
                 </div>
             </div>
