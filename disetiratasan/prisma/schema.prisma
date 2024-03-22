@@ -9,7 +9,7 @@ generator client {
 
 model Brands {
   Id   String          @id @default(cuid())
-  Name String
+  Name String?
   Cars Cars[]
   CBB  ColorByBrands[]
 }
@@ -106,14 +106,14 @@ model Trims {
 model Users {
   Id        String   @id
   Email     String   @unique
-  Password  String
-  FirstName String
+  Password  String?
+  FirstName String?
   LastName  String?
-  Number    String
-  Country   String
-  Region    String
-  City      String
-  Address   String
+  Number    String?
+  Country   String?
+  Region    String?
+  City      String?
+  Address   String?
   Type      Int      @default(0)
   Orders    Orders[]
 }
