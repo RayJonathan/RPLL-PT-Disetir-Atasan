@@ -8,93 +8,112 @@ generator client {
 }
 
 model Brands {
-  Id      String  @id @default(cuid())
-  Name    String?
+  Id   String          @id @default(cuid())
+  Name String
+  Cars Cars[]
+  CBB  ColorByBrands[]
 }
 
 model Cars {
-  Id         String  @id @default(cuid())
-  Id_brand   String?
-  Model      String?
-  Category  String?
-  Production Int?
+  Id          String         @id @default(cuid())
+  Id_brand    String         @map("Id_brand")
+  Model       String?
+  Category    String?
+  Production  Int?
   Description String?
-  Image      String?
-
-  Brand      Brands?  @relation(fields: [Id_brand], references: [Id])
+  Image       String?
+  brand       Brands         @relation(fields: [Id_brand], references: [Id])
+  CarDets     CarDetails[]
+  OBC         OptionByCars[]
 }
 
 model CarDetails {
-  Id          String  @id @default(cuid())
-  Id_car      String?
-  Type        String?
-  Price       Int?
-  Description String?
-  Image      String?
+  Id           String   @id @default(cuid())
+  Id_car       String   @map("Id_car")
+  Type         String?
+  Price        Int?
+  Description  String?
+  Image        String?
   Acceleration String?
-  Power       String?
-  Torque      String?
-
-  Car         Cars?    @relation(fields: [Id_car], references: [Id])
+  Power        String?
+  Torque       String?
+  car          Cars     @relation(fields: [Id_car], references: [Id])
+  orders       Orders[]
 }
 
 model Colors {
-  Id   String  @id @default(cuid())
-  Nama String?
+  Id     String          @id @default(cuid())
+  Name   String?
+  CBB    ColorByBrands[]
+  Orders Orders[]
 }
 
 model ColorByBrands {
+  Id       Int    @id @default(autoincrement())
   Id_color String
   Id_brand String
-
-  Color   Colors  @relation(fields: [Id_color], references: [Id])
-  Brand    Brands  @relation(fields: [Id_brand], references: [Id])
+  Color    Colors @relation(fields: [Id_color], references: [Id])
+  Brand    Brands @relation(fields: [Id_brand], references: [Id])
 }
 
 model Options {
-  Id   String  @id @default(cuid())
-  Nama String?
+  Id     String         @id @default(cuid())
+  Nama   String?
+  OBC    OptionByCars[]
+  Orders Orders[]
 }
 
 model OptionByCars {
+  Id        Int     @id @default(autoincrement())
   Id_option String
   Id_car    String
+  Option    Options @relation(fields: [Id_option], references: [Id])
+  Car       Cars    @relation(fields: [Id_car], references: [Id])
 }
 
 model Orders {
-  Id          String  @id @default(cuid())
-  Id_user     String?
-  Id_carDet   String?
-  Id_color    String?
-  Id_rim      String?
-  Id_trim     String?
-  Id_option   String?
+  Id        String     @id @default(cuid())
+  Id_user   String
+  Id_carDet String
+  Id_color  String
+  Id_rim    String
+  Id_trim   String
+  Id_option String
+  User      Users      @relation(fields: [Id_user], references: [Id])
+  CarDet    CarDetails @relation(fields: [Id_carDet], references: [Id])
+  Color     Colors     @relation(fields: [Id_color], references: [Id])
+  Rim       Rims       @relation(fields: [Id_rim], references: [Id])
+  Trim      Trims      @relation(fields: [Id_trim], references: [Id])
+  Option    Options    @relation(fields: [Id_option], references: [Id])
 }
 
 model Rims {
-  Id          String  @id @default(cuid())
+  Id          String   @id @default(cuid())
   Name        String?
   Price       Int?
   Description String?
+  Orders      Orders[]
 }
 
 model Trims {
-  Id          String  @id @default(cuid())
+  Id          String   @id @default(cuid())
   Name        String?
   Price       Int?
   Description String?
+  Orders      Orders[]
 }
 
 model Users {
-  Id         String  @id
-  Email      String  @unique
-  Password   String
-  FirstName  String
-  LastName   String?
-  Number     String
-  Country    String
-  Region     String
-  City       String
-  Address    String
-  Type       Int     @default(0)
+  Id        String   @id
+  Email     String   @unique
+  Password  String
+  FirstName String
+  LastName  String?
+  Number    String
+  Country   String
+  Region    String
+  City      String
+  Address   String
+  Type      Int      @default(0)
+  Orders    Orders[]
 }
