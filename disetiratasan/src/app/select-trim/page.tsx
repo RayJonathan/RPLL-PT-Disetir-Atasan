@@ -14,7 +14,9 @@ const Signup: React.FC<signup> = (props) => {
             <p className=" font-serif font-bold text-4xl"> SELECT A LINE</p>
             <p> 2023 EQB 250+ SUV</p>
             </div>
-            <RadiobuttonList/>
+            <div className=" mb-16">
+                <RadiobuttonList/>
+            </div>
         </div>
     );
 };
