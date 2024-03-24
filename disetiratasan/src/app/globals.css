@@ -49,6 +49,7 @@
     -o-transition: .3s ease all;
 }
 
+  
 .team-member:hover {
     scale: 102%;
 }
