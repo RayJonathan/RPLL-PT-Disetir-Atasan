@@ -23,11 +23,32 @@
 }
 
 .loading {
-  width:50px;
-  height:50px;
-  border-radius:50%;
-  background:conic-gradient(#0000 10%,#101D34);
-  -webkit-mask:radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
-  animation:s3 1s infinite linear;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: conic-gradient(#0000 10%, #101D34);
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+    animation: s3 1s infinite linear;
 }
-@keyframes s3 {to{transform: rotate(1turn)}}
+
+@keyframes s3 {
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+.team-member:hover .bg-gray-200 {
+    background-color: #b7c5d3;
+}
+
+.team-member {
+    transition: .3s ease all;
+    -webkit-transition: .3s ease all;
+    -moz-transition: .3s ease all;
+    -ms-transition: .3s ease all;
+    -o-transition: .3s ease all;
+}
+
+.team-member:hover {
+    scale: 102%;
+}

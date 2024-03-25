@@ -22,12 +22,12 @@ export default async function Home() {
         <h1>New Arrivals</h1>
       </div>
       <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-2 gap-3 h-1/2 p-3">
-        <NewArrivals/>
+        <NewArrivals />
       </div>
       <div className="p-3">
-        <BuildCustom/>
+        <BuildCustom />
       </div>
-      <Trending/>
+      <Trending />
     </div>
   );
 }
