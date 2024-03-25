@@ -1,8 +1,8 @@
 import Image from "next/image";
-
+import 'animate.css'
 const AboutUs = () => {
     return (
-        <div className="bg-disetircolour">
+        <div className="bg-disetircolour  animate__animated animate__fadeIn" >
             <div className="flex flex-col bg-gradient-to-t from-disetircolour to-transparent min-h-screen" style={{ backgroundImage: `linear-gradient(to top, rgba(16, 29, 52, 1), rgba(0,0,255,0.2)), url('/About-Us-Images/bg-image.png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                 <div className="flex justify-center">
                     <Image src="/About-Us-Images/DA-WHITE.png" className="mt-14" alt="..." width={150} height={150}></Image>
