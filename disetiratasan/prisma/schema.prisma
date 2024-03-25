@@ -106,14 +106,14 @@ model Trims {
 model Users {
   Id        String   @id
   Email     String   @unique
-  Password  String? 
-  FirstName String?
-  LastName  String?
-  Number    String?
-  Country   String?
-  Region    String?
-  City      String?
-  Address   String?
+  Password  String 
+  FirstName String
+  LastName  String
+  Number    String
+  Country   String
+  Region    String
+  City      String
+  Address   String
   Type      Int      @default(0)
   Orders    Orders[]
 }

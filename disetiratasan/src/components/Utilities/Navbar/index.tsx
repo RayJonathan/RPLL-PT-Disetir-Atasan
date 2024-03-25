@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-
+import { signIn, signOut } from "next-auth/react";
 export default function Navbar() {
   const router = useRouter();
 
@@ -37,8 +37,11 @@ export default function Navbar() {
               </ul>
             </nav>
           </div>
-          <div className="absolute text-white hover:text-gray-300 right-4 cursor-pointer pr-3 md:text-base sm:text-xs text-xs" onClick={()=>onClickUrl('/login')}>
+          <div className="absolute text-white hover:text-gray-300 right-4 cursor-pointer pr-3 md:text-base sm:text-xs text-xs" onClick={()=>signIn()}>
               Login
+          </div>
+          <div className="absolute text-white hover:text-gray-300 right-4 cursor-pointer pr-3 md:text-base sm:text-xs text-xs mr-16" onClick={()=>signOut()}>
+              Log Out
           </div>
         </div>
       </header>

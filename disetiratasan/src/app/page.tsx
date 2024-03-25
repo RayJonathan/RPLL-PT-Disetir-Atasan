@@ -12,10 +12,7 @@ export default async function Home() {
   return (
     
     <div className="max-w-1440 m-auto">
-      <h1>Server Session</h1>
-      <pre>{JSON.stringify(session)}</pre>
-      <h1>Client Call</h1>
-      <User/>
+      
 
       <Hover/>
       <div className="font-bold md:text-lg text-md bg-blue-new flex item-center text-white w-60 p-1 pl-2 ml-3 mt-3">
