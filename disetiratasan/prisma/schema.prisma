@@ -106,7 +106,7 @@ model Trims {
 model Users {
   Id        String   @id
   Email     String   @unique
-  Password  String?
+  Password  String? 
   FirstName String?
   LastName  String?
   Number    String?
