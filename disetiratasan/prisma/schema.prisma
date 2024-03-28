@@ -44,6 +44,7 @@ model CarDetails {
 model Colors {
   Id     String          @id @default(cuid())
   Name   String?
+  Image  String?
   CBB    ColorByBrands[]
   Orders Orders[]
 }
@@ -58,7 +59,8 @@ model ColorByBrands {
 
 model Options {
   Id     String         @id @default(cuid())
-  Nama   String?
+  Name   String?
+  Price  Int?
   OBC    OptionByCars[]
   Orders Orders[]
 }
