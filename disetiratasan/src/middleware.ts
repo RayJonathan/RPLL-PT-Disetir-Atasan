@@ -3,6 +3,6 @@ export {default} from 'next-auth/middleware'
 
 export const config = {
     matcher:[
-        'vehicle-list'
+        '/vehicle-list'
     ]
 }
